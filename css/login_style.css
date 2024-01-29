@@ -1,0 +1,142 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+
+body{
+    /* background-color: #ff5400; */
+    background-color: #f1d9bd;
+}
+#wrap{
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.container{
+    width: 360px;
+    margin: 0 auto;
+}
+
+
+/* header */
+.header h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 70px 0 0 0;
+    margin-bottom: 50px;
+    color: #525252;
+}
+
+
+/* conts */
+
+/* login_tab */
+.conts .login_tab ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conts .login_tab ul li{
+    border-bottom: 2px solid rgba(82,82,82,0.3);
+}
+.conts .login_tab ul li a{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    width: 180px;
+    line-height: 30px;
+    padding: 10px 0;
+}
+.conts .login_tab ul li.active{
+    border-bottom: 2px solid #f1d9bd;
+}
+.conts .login_tab ul li.active a{color: #000;}
+
+
+/* login_cont */
+.login_cont .login{
+    outline: none;
+    margin-top: 25px;
+}
+.login_cont .login .login_input{
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid rgba(82,82,82,0.3);
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 700;
+}
+.login .login_input::placeholder{
+    color: rgba(82,82,82,0.5);
+}
+
+/* check */
+.check .check_input{
+    width: 14px;
+    height: 14px;
+}
+.check label{
+    vertical-align: 2px;
+    font-size: 15px;
+}
+
+
+/* button */
+.button .lg_btn{
+    width: 360px;
+    height: 70px;
+    border: 0;
+    background-color: #f1d9bd;
+    font-size: 18px;
+}
+
+
+/* join */
+.join ul{
+    text-align: center;
+}
+.join ul li{
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+}
+.join ul li:last-child{
+    margin-right: 0;
+}
+.join ul li::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: rgba(82,82,82,0.7);
+    position: absolute;
+    left: -20px;
+    top: 4px;
+}
+.join ul li:first-child::before{
+    width: 0;
+}
+.join ul li a{
+    font-size: 14px;
+    color: #000;
+}
+
+
+
+.cs{
+    font-size: 12.5px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 5px;
+    display: none;
+}
+.cs::before{
+    content: "";
+    position: absolute; left: 45px; bottom: 0;
+    width: 82%; height: 1px; background-color: #f1d9bd;
+}

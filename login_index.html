@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1차 포폴_로그인 창</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/login_style.css">
+    <link rel="shortuct icon" href="./img/favicon.png">
+</head>
+<body>
+    <div id="wrap" class="mt100">
+        <header class="header">
+            <h1>LogIn</h1>
+        </header>
+        <div class="conts">
+            <div class="container">
+                <div class="login_tab">
+                    <ul>
+                        <li class="active"><a href="#">로그인</a></li>
+                        <li class="click"><a href="#">비회원 주문조회</a></li>
+                    </ul>
+                </div><!--//.login_tab-->
+
+                <div class="login_cont">
+                    <article class="log1">
+                        <div class="login">
+                            <form>
+                                <label for="id" class="ir_su">아이디</label>
+                                <input type="text" id="id" name="id" class="login_input" placeholder="아이디" required="required">
+                                <label for="pw" class="ir_su">비밀번호</label>
+                                <input type="password" id="pw" name="pw" class="login_input" placeholder="비밀번호" minlength="8" required="required">
+                            </form>
+                        </div><!--//.login-->
+    
+                        <div class="check mt10">
+                            <input type="checkbox" id="check" class="check_input">
+                            <label for="check">로그인 상태 유지</label>
+                        </div><!--//.check--> 
+    
+                        <div class="button mt40">
+                            <a href="index2.html">
+                                <button class="lg_btn" type="submit">로그인</button>
+                            </a>                            
+                        </div><!--//.button-->
+    
+                        <div class="join mt40">
+                            <ul>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">아이디 찾기</a></li>
+                                <li><a href="#">비밀번호 찾기</a></li>
+                            </ul>
+                        </div><!--//.join-->
+                    </article>
+
+                    <article class="log2">
+                        <div class="login">
+                            <label for="order_name" class="ir_su">주문자명</label>
+                            <input type="text" id="id" name="order_name" class="login_input" placeholder="주문자명" required="required">
+                            <label for="order_number" class="ir_su">주문번호</label>
+                            <input type="order_number" id="pw" name="pw" class="login_input" placeholder="주문번호" required="required">
+                        </div><!--//.login-->
+                        <div class="button mt10">
+                            <button class="lg_btn" type="submit">확인</button>
+                        </div><!--//.button-->
+                        <div class="join mt40">
+                            <ul>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">아이디 찾기</a></li>
+                                <li><a href="#">비밀번호 찾기</a></li>
+                            </ul>
+                        </div><!--//.join-->
+                    </article>
+                </div><!--//.login_cont-->
+            </div><!--//.container-->
+            <p class="cs mt60">※ 주문번호와 비밀번호를 잊으신 경우, 고객센터로 문의하여 주시기 바랍니다.</p>
+        </div><!--//.conts-->
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./script/login_script.js"></script>
+
+</body>
+</html>
