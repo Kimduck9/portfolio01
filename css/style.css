@@ -1,7 +1,7 @@
 @charset "utf-8";
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
-
+#wrap{cursor: default;}
 /* header */
 #header .earth{
     width: 100%;
@@ -17,6 +17,7 @@
     float: left;    
     width: 200px; height: 100px;
     display: flex; align-items: center; justify-content: center;
+    cursor: pointer;
 }
 .header .nav{
     float: left;
@@ -118,6 +119,7 @@
     background: url(../img/banner_arrow.png) 0 0;
     width: 42px; height: 35px;
     text-indent: -99999px;
+    cursor: pointer;
 }
 .banner .slick-next{
     position: absolute; z-index: 5;
@@ -125,6 +127,7 @@
     background: url(../img/banner_arrow.png) -58px 0;
     width: 42px; height: 35px;
     text-indent: -99999px;
+    cursor: pointer;
 }
 
 
@@ -143,8 +146,10 @@
     padding: 30px 40px;
     position: relative;
     margin: 0 2% 2% 0;
+    cursor: pointer;
 }
 .main .box:nth-of-type(2n){margin-right: 0;}
+.main .box .box_tit{transition: all 0.3s;}
 .main .box .box_tit span{font-size: 20px;}
 .main .box .box_tit p{font-size: 33px; font-weight: bold;}
 .main .box .box_tag{padding: 20px 0;}
@@ -155,18 +160,16 @@
     border: 1px solid rgba(0,0,0,0.4);
     border-radius: 20px;
     padding: 7px 15px;
+    transition: all 0.3s;
 }
-.main .box .box_tag ul li a{font-size: 18px;}
-.main .box .box_img{margin-top: 13px;}
-.main .box .box_img .before img{width: 70%;}
+.main .box .box_tag ul li a{font-size: 18px; transition: all 0.3s;}
+.main .box .box_img{margin-top: 13px; transition: all 0.3s;}
+.main .box .box_img .before img{width: 70%; transition: all 0.3s;}
 .main .box .box_img .nuggi{
     position: absolute; bottom: 20px; right: 40px;
     width: 110px;
+    transition: all 0.3s;
 }
-/* .main .box01 .box_img .nuggi{right: 40px;}
-.main .box02 .box_img .nuggi{right: 40px;}
-.main .box03 .box_img .nuggi{right: 40px;}
-.main .box04 .box_img .nuggi{right: 40px;} */
 
 .main .box02 .box_img figcaption{
     position: absolute;
@@ -182,7 +185,6 @@
 
 
 /* Product : 탭메뉴*/
-/* .Product{position: relative; height: 600px; background-color: cornsilk;} */
 .Product .pro_tab{position: absolute; left: -85px; top: 0;}
 .Product .pro_tab ul li{
     border: 1px solid #f1d9bd;
@@ -210,6 +212,8 @@
 .Product .pro_conts .pro_con01 .swiper-slide:hover figcaption{
     background-color: #f1d9bd; 
 }
+
+.swiper-slide{cursor: pointer;}
 
 /* .pro_con02 */
 .pro_con02 .swiper-slide figure{
@@ -344,6 +348,7 @@
     background: url(../img/review_pagination_left.png) no-repeat ;
     background-size: 100%;
     text-indent: -99999px;
+    cursor: pointer;
 }
 .review .slick-next{
     position: absolute; right: -70px; top: 50%;
@@ -352,6 +357,7 @@
     background: url(../img/review_pagination_right.png) no-repeat ;
     background-size: 100%;
     text-indent: -99999px;
+    cursor: pointer;
 }
 
 
@@ -524,7 +530,7 @@
 }
 
 .pop_All .pop_X{
-    position: absolute; left: 60.2%; top: 20%;
+    position: absolute; left: 60.2%; top: 20%; cursor: pointer;
 }
 .pop_All .pop_X p{
     width: 25px; height: 25px; background-color: transparent;
@@ -547,11 +553,13 @@
     transform: rotate(-45deg);
 }
 .pop_All .pop_check{
-    position: absolute; left: 53.5%; top: 64%;
+    position: absolute; left: 53.5%; top: 64%; 
 }
+.pop_All .pop_check input{ cursor: pointer;}
 .pop_All .pop_check label{
     color: #fff;
     font-size: 13px;
     padding-left: 3px;
     vertical-align: 2px;
+    cursor: pointer;
 }
